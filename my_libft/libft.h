@@ -6,7 +6,7 @@
 /*   By: atourret <atourret@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/23 13:45:42 by atourret          #+#    #+#             */
-/*   Updated: 2021/06/04 13:54:53 by atourret         ###   ########lyon.fr   */
+/*   Updated: 2021/06/05 18:17:33 by atourret         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ size_t				ft_strlcat(char *restrict dst, const char *src, \
 char				*ft_strnstr(const char *haystack, const char *needle, \
 					size_t len);
 int					ft_atoi(const char *str);
+int					ft_atoi_base(char *str, char *base);
 char				*ft_strcat(char *dest, char *src);
 
 void				*ft_calloc(size_t count, size_t size);
@@ -68,6 +69,7 @@ char				*ft_strdup(const char *s1);
 
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char *s1, char *s2, int free1, int free2);
+char				*ft_strjoin_c(char *s1, char c);
 char				*ft_strtrim(char const *s1, char const *set);
 char				**ft_split(char const *s, char c);
 char				*ft_itoa(int n);

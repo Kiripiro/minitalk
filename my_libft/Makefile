@@ -22,11 +22,13 @@ SRCS	=  ft_memset.c \
 		   ft_strcat.c \
 		   ft_strnstr.c \
 		   ft_atoi.c \
+		   ft_atoi_base.c \
 		   ft_atoll.c \
 		   ft_calloc.c \
 		   ft_strdup.c \
 		   ft_substr.c \
 		   ft_strjoin.c \
+		   ft_strjoin_c.c \
 		   ft_strtrim.c \
 		   ft_split.c \
 		   ft_itoa.c \
