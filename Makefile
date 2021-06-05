@@ -32,7 +32,7 @@ $(CLIENT):	srcs/client.o
 			@$(CC) $(CFLAGS) -c $< -o $@ -I $(HEADER)
 
 clean:
-			@rm -f *.o
+			@rm -f */*.o
 			@make clean -C my_libft
 
 fclean:		clean
