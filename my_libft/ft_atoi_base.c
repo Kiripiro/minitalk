@@ -6,20 +6,20 @@
 /*   By: atourret <atourret@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/05 18:15:48 by atourret          #+#    #+#             */
-/*   Updated: 2021/06/05 18:16:42 by atourret         ###   ########lyon.fr   */
+/*   Updated: 2021/06/07 15:51:38 by atourret         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	verif_base(char *base)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 
 	i = -1;
 	j = 0;
 	while (base[++i])
 	{
-		if ((base[i] == '+' || base[i] == '-') ||
+		if ((base[i] == '+' || base[i] == '-') || \
 				(base[i] >= 9 && base[i] <= 13) || base[i] == ' ')
 			return (0);
 		j = i + 1;
@@ -59,10 +59,10 @@ int	convert(char c, char *base)
 
 int	ft_atoi_base(char *str, char *base)
 {
-	int				i;
-	int				j;
-	int				sign;
-	int				nb;
+	int	i;
+	int	j;
+	int	sign;
+	int	nb;
 
 	i = 0;
 	sign = 1;

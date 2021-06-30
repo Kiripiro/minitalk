@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: atourret <atourret@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/04 11:39:11 by atourret          #+#    #+#             */
-/*   Updated: 2021/06/05 21:00:01 by atourret         ###   ########lyon.fr   */
+/*   Created: 2021/06/07 15:50:05 by atourret          #+#    #+#             */
+/*   Updated: 2021/06/07 15:51:12 by atourret         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,19 +68,17 @@ void	send_data(int pid_serv, char *s)
 		}
 		s++;
 	}
-
 }
 
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
 	pid_t	pid;
 
 	if (ac != 3)
-	  error("PID and string needed.\n");
+		error("PID and string needed.\n");
 	pid = atoi(av[1]);
 	send_data(pid, av[2]);
 	send_newline(pid);
 	ft_putstr_fd("Data sent.\n", 1);
 	return (EXIT_SUCCESS);
 }
- 
